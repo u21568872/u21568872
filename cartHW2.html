@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width= device-width, initial scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styleHW2.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class=" jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container-fluid">
+                        <!--Vertical Navbar-->
+                        <nav class="icon-bar">
+                            <!--Links-->
+                            <a id="homeIcon" class="active" href="indexHW2.html"><i
+                                    class="fa-solid fa-clapperboard-play"></i></i></a>
+                            <a id="cartIcon" href="cartHW2.html"><i class="fa-solid fa-cart-plus"></i></i></a>
+                        </nav>
+                        
+                        <h1>Cart</h1>
+
+                        <table class="table" id="cartTable">
+                            <thead class="thead-dark">
+                                <th>Movie</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>Total Cost</th>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    <script src="scriptHW2.js">
+                        function insRow(cartTable) {
+                            var x = document.getElementById(cartTable).insertRow(0);
+                            var movie = x.insertCell(0);
+                            var unitPrice = x.insertCell(1);
+                            var quantity = x.insertCell(2);
+                            var totalCost = x.insertCell(3);
+                            movie.innerHTML = 0;
+                            unitPrice.innerHTML = 0;
+                            quantity.innerHTML = 0;
+                            totalCost.innerHTML = 0;
+                        }
+                    </script>
+</body>
+
+</html>
